@@ -175,11 +175,15 @@ button:hover {
         display: flex;
         width: auto;
         justify-content: space-between;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        min-width: 80%;
+    }
+    .header-small-padding {
+        min-width: 10%;
+        width: auto;
     }
     .left-logo {
-        width: 15rem;
+        width: 50%;
+        max-width: 15rem;
         margin-right: auto;
     }
     .evinine-logo {
@@ -275,14 +279,14 @@ button:hover {
     font-style: italic;
 }
 .lyrics-subtitle {
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 .lyrics-section-name {
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding: 1.7rem 0;
 }
 .lyrics-section {
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding: 0;
 }
 .button {
@@ -451,7 +455,8 @@ button:hover {
 @media (max-width: 860px) {
     .body {
         margin: 7rem auto;
-        max-width: 65rem;
+        max-width: 80%;
+        width: 30rem;
         justify-items: center;
     }
     .image-text-pair {
@@ -489,13 +494,12 @@ button:hover {
         gap: 1rem;
     }
     .paragraph {
-        max-width: 30rem;
+        width: 100%;
         margin: 0 2rem 5rem 2rem;
     }
     .paragraph-text {
         display: flex;
         width: 100%;
-        max-width: 30rem;
         flex-direction: column;
         flex: 1;
         font-size: 1.7rem;
@@ -553,8 +557,8 @@ button:hover {
         max-width: 30rem;
         flex-direction: column;
         flex: 1;
-        font-size: 1.7rem;
+        font-size: 1rem;
         justify-content: center;
-        line-height: 2.5rem;
+        line-height: 1.2rem;
     }
 }
