@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Kotta One';
+    src: url('Fonts/KottaOne-Regular.eot');
+    src: url('Fonts/KottaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/KottaOne-Regular.woff2') format('woff2'),
+        url('Fonts/KottaOne-Regular.woff') format('woff'),
+        url('Fonts/KottaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+html {
+    height: 100vh
+}
+body {
+    color: var(--text-color);
+    font-family: 'Kotta One', 'Times New Roman', Times, serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 2rem 0;
+    background-image: url(Backgrounds/Background\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+
+:root {
+    --text-color: #A9C3DA;
+    --link-color: #A9CEDA;
+}
+:link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* STYLING FOR HEADER */
+
+.current-page {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+/* Large Header (1000px or more) */
+@media (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .menu-website-links {
+        display: none;
+    }
+    .menu-socials-links {
+        display: none;
+    }
+    .header-small {
+        display: none;
+    }
+    .header-medium {
+        display: none;
+    }
+    .header-large {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .website-links {
+        display: flex;
+        gap: 2.7rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .website-link {
+        font-size: 1.7rem;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+    .center-logo {
+        width: 25rem;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .socials-links {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .social-link {
+        width: 2rem;
+        margin-left: 1rem;
+    }
+    .social-link-space {
+        width: 1.3rem
+    }
+    .social-link-logo {
+        width: 100%
+    }
+}
+
+/* Medium Header (660px to 1000px) */
+@media (min-width: 660px) and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .menu-website-links {
+        display: none;
+    }
+    .menu-socials-links {
+        display: none;
+    }
+    .header-small {
+        display: none;
+    }
+    .header-large {
+        display: none;
+    }
+    .header-medium {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .left-logo {
+        max-width: 25rem;
+        width: 34%;
+        margin-right: auto;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .website-links {
+        display: flex;
+        gap: 2.7rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .website-link {
+        font-size: 1.7rem;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+}
+
+/* Small Header and Menu (up to 660px) */
+@media (max-width: 660px) {
+    .header-medium {
+        display: none;
+    }
+    .header-large {
+        display: none;
+    }
+    .header-small {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .left-logo {
+        width: 15rem;
+        margin-right: auto;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .open-menu-button {
+        height: 2.2rem;
+        width: 2.2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .menu-logo {
+        width: 100%
+    }
+    .menu {
+        background-color: #1c3865;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 90%;
+        width: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 0 0 1.5rem 0.1rem #00000090;
+    }
+    .menu-gap {
+        flex: 1;
+    }
+    .close-menu-button {
+        width: 2rem;
+        margin-top: 5.6rem;
+        margin-left: auto;
+        margin-right: 5rem;
+        transition: 0.3s;
+    }
+    .cross-logo {
+        width: 100%;
+        margin: auto;
+    }
+    .menu-website-links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website-link {
+        font-size: 0;
+        transition: 0.3s;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+    .menu-socials-links {
+        display: flex;
+        margin: 5rem 4rem 5rem 3rem;
+    }
+    .social-link {
+        width: 2rem;
+        margin-left: 1rem;
+    }
+    .social-link-space {
+        width: 1.3rem
+    }
+    .social-link-logo {
+        width: 100%
+    }
+    .page-cover {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        z-index: 998;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+}
+
+/* STYLING FOR MAIN BODY */
+
+.lyrics-title {
+    font-size: 3.7rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+.lyrics-subtitle {
+    font-size: 1.7rem;
+}
+.lyrics-section-name {
+    font-size: 1.7rem;
+    padding: 1.7rem 0;
+}
+.lyrics-section {
+    font-size: 1.7rem;
+    padding: 0;
+}
+.button {
+    flex: 1;
+}
+.button-link {
+    display: flex;
+    border-style: solid;
+    border-color: #A9C3DA;
+    border-width: 1px;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 1.3rem;
+}
+.button-link:hover {
+    background-color: #A9C3DA;
+    color: black;
+    transition: 0.2s;
+}
+.social-button {
+    width: 30rem;
+    display: flex;
+    border-style: solid;
+    border-color: #A9C3DA;
+    border-width: 1px;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 1.3rem;
+    font-size: 1.7rem;
+}
+.social-button:hover {
+    background-color: #A9C3DA;
+    color: black;
+    transition: 0.2s;
+}
+.social-button-logo-container {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.7rem;
+    padding: 0;
+}
+.instagram-logo {
+    width: 2rem;
+}
+.social-button-logo {
+    width: 2rem;
+    margin: 0;
+    position: absolute;
+    transition: 0.2s;
+}
+.socials-title {
+    font-size: 2.7rem;
+    padding-top: 5rem;
+    padding-bottom: 1.7rem;
+}
+.body {
+    margin: 0rem auto 7rem auto;
+    max-width: 30rem;
+    justify-items: center;
+}
