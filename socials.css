@@ -16,7 +16,7 @@ body {
     color: var(--text-color);
     font-family: 'Kotta One', 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0;
+    padding: -10rem;
     min-height: 100vh;
     background-image: url(Backgrounds/Background\ 2.jpg);
     background-size: cover;
