@@ -200,8 +200,8 @@ button:hover {
         width: 100%;
     }
     .open-menu-button {
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -209,12 +209,13 @@ button:hover {
         width: 100%
     }
     .menu {
-        background-color: #0f2854;
+        background-color: #1c3865;
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 90%;
         width: 0;
+        max-width: fit-content;
         height: 100%;
         position: fixed;
         z-index: 999;
@@ -223,6 +224,7 @@ button:hover {
         bottom: 0;
         overflow: hidden;
         transition: 0.5s;
+        box-shadow: 0 0 1.5rem 0.1rem #00000090;
     }
     .menu-gap {
         flex: 1;
@@ -257,10 +259,11 @@ button:hover {
     }
     .menu-socials-links {
         display: flex;
-        margin: 5rem 4rem 5rem 3rem;
+        margin: 5rem 3rem 5rem 3rem;
+        padding-right: 1rem;
     }
     .social-link {
-        width: 2rem;
+        width: 1.5rem;
         margin-left: 1rem;
     }
     .social-link-space {
