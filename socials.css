@@ -171,19 +171,23 @@ button:hover {
         display: flex;
         width: auto;
         justify-content: space-between;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        min-width: 80%;
+    }
+    .header-small-padding {
+        min-width: 10%;
+        width: auto;
     }
     .left-logo {
-        width: 15rem;
+        width: 50%;
+        max-width: 15rem;
         margin-right: auto;
     }
     .evinine-logo {
         width: 100%;
     }
     .open-menu-button {
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -197,6 +201,7 @@ button:hover {
         justify-content: center;
         max-width: 90%;
         width: 0;
+        max-width: fit-content;
         height: 100%;
         position: fixed;
         z-index: 999;
@@ -240,10 +245,11 @@ button:hover {
     }
     .menu-socials-links {
         display: flex;
-        margin: 5rem 4rem 5rem 3rem;
+        margin: 5rem 3rem 5rem 3rem;
+        padding-right: 1rem;
     }
     .social-link {
-        width: 2rem;
+        width: 1.5rem;
         margin-left: 1rem;
     }
     .social-link-space {
@@ -266,22 +272,6 @@ button:hover {
 
 /* STYLING FOR MAIN BODY */
 
-.lyrics-title {
-    font-size: 3.7rem;
-    padding-bottom: 1rem;
-    font-style: italic;
-}
-.lyrics-subtitle {
-    font-size: 1.7rem;
-}
-.lyrics-section-name {
-    font-size: 1.7rem;
-    padding: 1.7rem 0;
-}
-.lyrics-section {
-    font-size: 1.7rem;
-    padding: 0;
-}
 .button {
     flex: 1;
 }
@@ -303,7 +293,8 @@ button:hover {
     transition: 0.2s;
 }
 .social-button {
-    width: 30rem;
+    max-width: 30rem;
+    width: 100%;
     display: flex;
     border-style: solid;
     border-color: #A9C3DA;
@@ -327,9 +318,6 @@ button:hover {
     margin-right: 0.7rem;
     padding: 0;
 }
-.instagram-logo {
-    width: 2rem;
-}
 .social-button-logo {
     width: 2rem;
     margin: 0;
@@ -340,9 +328,38 @@ button:hover {
     font-size: 2.7rem;
     padding-top: 5rem;
     padding-bottom: 1.7rem;
+    transition: 0.2s;
+    text-align: center;
 }
 .body {
     margin: 0rem auto 7rem auto;
+    width: 80%;
     max-width: 30rem;
     justify-items: center;
+}
+
+@media (max-width: 860px) {
+    .social-button {
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .social-button-logo-container {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.7rem;
+        padding: 0;
+    }
+    .social-button-logo {
+        width: 1.5rem;
+        margin: 0;
+        position: absolute;
+        transition: 0.2s;
+    }
+    .socials-title {
+        font-size: 1.7rem;
+        padding-top: 5rem;
+        padding-bottom: 1.7rem;
+    }
 }
