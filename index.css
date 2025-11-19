@@ -21,7 +21,7 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
-    background-color: #5F7FCC;
+    background-color:#5F7FCC;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -87,7 +87,6 @@ button:hover {
     .header-large {
         display: flex;
         justify-content: space-evenly;
-        padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -146,7 +145,6 @@ button:hover {
         display: none;
     }
     .header-medium {
-        padding-top: 2rem;
         display: flex;
         width: auto;
         justify-content: space-between;
@@ -186,7 +184,6 @@ button:hover {
         display: none;
     }
     .header-small {
-        padding-top: 2rem;
         display: flex;
         width: auto;
         justify-content: space-between;
@@ -343,7 +340,7 @@ button:hover {
 /* Wide Main Body (860px and above) */
 @media (min-width: 860px) {
     .body {
-        margin: 7rem auto;
+        margin: 0rem auto;
         max-width: 65rem;
     }
     .image-text-pair {
@@ -618,4 +615,3 @@ button:hover {
         transition: 0.2s;
     }
 }
-
