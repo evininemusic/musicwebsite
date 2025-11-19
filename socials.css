@@ -34,12 +34,22 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
-    background-color: #5F7FCC;
+    background-color:#5F7FCC;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url("Backgrounds/Background\ 2.jpg");
     background-size: cover;
+}
+.wrapper {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 2rem;
 }
 
 :root {
@@ -66,6 +76,9 @@ button:hover {
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
 }
+.body {
+    padding-bottom: 2rem;
+}
 
 /* Large Header (1000px or more) */
 @media (min-width: 1000px) {
@@ -89,7 +102,6 @@ button:hover {
         justify-content: space-evenly;
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-top: 2rem;
     }
     .website-links {
         display: flex;
@@ -151,7 +163,6 @@ button:hover {
         justify-content: space-between;
         margin-left: 5rem;
         margin-right: 5rem;
-        padding-top: 2rem;
     }
     .left-logo {
         max-width: 25rem;
@@ -190,7 +201,6 @@ button:hover {
         width: auto;
         justify-content: space-between;
         min-width: 80%;
-        padding-top: 2rem;
     }
     .header-small-padding {
         min-width: 10%;
@@ -382,4 +392,3 @@ button:hover {
         padding-bottom: 1.7rem;
     }
 }
-
