@@ -9,12 +9,16 @@
     font-style: normal;
     font-display: swap;
 }
+body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
 body {
     color: var(--text-color);
     font-family: 'Kotta One', 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    height: 100svh;
     background-image: url(Backgrounds/Background\ 2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -363,4 +367,3 @@ button:hover {
         padding-bottom: 1.7rem;
     }
 }
-
