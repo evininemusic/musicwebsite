@@ -21,7 +21,7 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
-    background-color:#5F7FCC;
+    background-color:#00000000;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -615,3 +615,4 @@ button:hover {
         transition: 0.2s;
     }
 }
+
