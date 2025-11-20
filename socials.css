@@ -246,9 +246,9 @@ button:hover {
     }
     .close-menu-button {
         width: 2rem;
-        margin-top: 5.6rem;
+        margin-top: 6rem;
         margin-left: auto;
-        margin-right: 5rem;
+        margin-right: 4rem;
         transition: 0.3s;
     }
     .cross-logo {
@@ -392,5 +392,6 @@ button:hover {
         padding-bottom: 1.7rem;
     }
 }
+
 
 
