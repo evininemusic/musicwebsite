@@ -25,7 +25,6 @@ body {
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
     background-image: url("Backgrounds/Background\ 2.jpg");
     background-size: cover;
 }
@@ -121,7 +120,10 @@ button:hover {
     }
     .social-link {
         width: 2rem;
-        margin-left: 4rem;
+        margin-left: 1rem;
+    }
+    .social-link-space {
+        width: 1.3rem
     }
     .social-link-logo {
         width: 100%
@@ -264,11 +266,11 @@ button:hover {
     .menu-socials-links {
         display: flex;
         margin: 5rem 3rem 5rem 3rem;
-        padding-right: 3rem;
+        padding-right: 1rem;
     }
     .social-link {
-        width: 1.8rem;
-        margin-left: 3rem;
+        width: 1.5rem;
+        margin-left: 1rem;
     }
     .social-link-space {
         width: 1.3rem
@@ -365,10 +367,8 @@ button:hover {
         justify-content: center;
     }
     .title {
-        font-size: 2.7rem;
+        font-size: 3.7rem;
         font-style: italic;
-        text-align: center;
-        letter-spacing: 0.3rem;
     }
     .description {
         line-height: 2.5rem;
@@ -482,6 +482,22 @@ button:hover {
         width: 80%;
         max-width: 30rem;
         justify-items: center;
+    }
+    .image-text-pair {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 2rem;
+        margin: 0 auto 5rem auto;
+    }
+    .image {
+        width: 100%;
+    }
+    .image-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex: 1;
     }
     .title {
         font-size: 2.7rem;
