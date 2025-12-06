@@ -365,10 +365,8 @@ button:hover {
         justify-content: center;
     }
     .title {
-        font-size: 2.7rem;
+        font-size: 3.7rem;
         font-style: italic;
-        text-align: center;
-        letter-spacing: 0.3rem;
     }
     .description {
         line-height: 2.5rem;
@@ -482,6 +480,22 @@ button:hover {
         width: 80%;
         max-width: 30rem;
         justify-items: center;
+    }
+    .image-text-pair {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 2rem;
+        margin: 0 auto 5rem auto;
+    }
+    .image {
+        width: 100%;
+    }
+    .image-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex: 1;
     }
     .title {
         font-size: 2.7rem;
