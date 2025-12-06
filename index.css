@@ -228,7 +228,6 @@ button:hover {
         overflow: hidden;
         transition: 0.5s;
         box-shadow: 0 0 1.5rem 0.1rem #00000090;
-        padding-right: 1rem;
     }
     .menu-gap {
         flex: 1;
