@@ -366,16 +366,17 @@ button:hover {
 }
 .image {
     max-width: 30rem;
+    width: 100%;
     box-shadow: 0 0 1.5rem 0.1rem #00000090;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 464px) {
     .streaming-info {
         display: flex;
         flex-direction: column;
         max-width: 30rem;
         gap: 2rem;
-        margin: 5rem 2rem 5rem 2rem;
+        margin: 5rem 0rem;
     }
     .streaming-title {
         width: 100%;
@@ -389,7 +390,7 @@ button:hover {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 464px) {
     .social-button {
         height: 2.5rem;
         border-radius: 1.25rem;
@@ -418,7 +419,7 @@ button:hover {
         flex-direction: column;
         max-width: 30rem;
         gap: 1.5rem;
-        margin: 3rem 2rem 3.75rem 2rem;
+        margin: 5rem 0rem;
     }
     .streaming-title {
         width: 100%;
