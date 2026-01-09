@@ -1,101 +1,433 @@
-<!DOCTYPE html>
-<html>
-  
-<head>
+@font-face {
+    font-family: 'Kotta One';
+    src: url('Fonts/KottaOne-Regular.eot');
+    src: url('Fonts/KottaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/KottaOne-Regular.woff2') format('woff2'),
+        url('Fonts/KottaOne-Regular.woff') format('woff'),
+        url('Fonts/KottaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+/* body {
+    color: var(--text-color);
+    font-family: 'Kotta One', 'Times New Roman', Times, serif;
+    background-image: url(Backgrounds/Background\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+} */
+body {
+    color: var(--text-color);
+    font-family: 'Kotta One', 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color:#000000;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("Backgrounds/Background\ 2.jpg");
+    background-size: cover;
+}
+.wrapper {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 2rem;
+}
 
-<title>
-Socials - evinine
-</title>
-<link rel="icon" href="Logos/ev Logo Blue.svg" type="image/icon type">
-<link rel="stylesheet" href="socials.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+:root {
+    --text-color: #A9C3DA;
+    --link-color: #A9CEDA;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+button:hover {
+    cursor: pointer;
+}
 
-</head>
+/* STYLING FOR HEADER */
 
-<body>
+.current-page {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+.body {
+    padding-bottom: 2rem;
+}
+.header-apple-logo {
+    transform: translateY(-0.1rem);
+}
 
-<div class="wrapper">
+/* Large Header (1000px or more) */
+@media (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .menu-website-links {
+        display: none;
+    }
+    .menu-socials-links {
+        display: none;
+    }
+    .header-small {
+        display: none;
+    }
+    .header-medium {
+        display: none;
+    }
+    .header-large {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .website-links {
+        display: flex;
+        gap: 2.7rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .website-link {
+        font-size: 1.7rem;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+    .center-logo {
+        width: 25rem;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .socials-links {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .social-link {
+        width: 2rem;
+        margin-left: 1.7rem;
+    }
+    .social-link-logo {
+        width: 100%
+    }
+}
 
-<div class="header-large">
-<div class="website-links">
-<div><a class="website-link" href="https://evininemusic.com">home</a></div>
-<div><a class="website-link" href="https://evininemusic.com/music">music</a></div>
-<div><a class="website-link current-page" href="https://evininemusic.com/socials">socials</a></div>
-</div>
-<div class="center-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<div class="socials-links">
-<div class="social-link"><a href="https://open.spotify.com/artist/2nb2f6Nn7MJCkvjmZKr6GC"><img class="social-link-logo" src="Logos/Spotify Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://music.apple.com/us/artist/evinine/1860717141"><img class="social-link-logo header-apple-logo" src="Logos/Apple Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://www.youtube.com/@evininemusic"><img class="social-link-logo" src="Logos/YouTube Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://tiktok.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
-</div>
-</div>
+/* Medium Header (660px to 1000px) */
+@media (min-width: 660px) and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .menu-website-links {
+        display: none;
+    }
+    .menu-socials-links {
+        display: none;
+    }
+    .header-small {
+        display: none;
+    }
+    .header-large {
+        display: none;
+    }
+    .header-medium {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .left-logo {
+        max-width: 25rem;
+        width: 34%;
+        margin-right: auto;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .website-links {
+        display: flex;
+        gap: 2.7rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .website-link {
+        font-size: 1.7rem;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+}
 
-<div class="header-medium">
-<div class="left-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<div class="website-links">
-<div><a class="website-link" href="https://evininemusic.com">home</a></div>
-<div><a class="website-link" href="https://evininemusic.com/music">music</a></div>
-<div><a class="website-link current-page" href="https://evininemusic.com/socials">socials</a></div>
-</div>
-</div>
+/* Small Header and Menu (up to 660px) */
+@media (max-width: 660px) {
+    .header-medium {
+        display: none;
+    }
+    .header-large {
+        display: none;
+    }
+    .header-small {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        min-width: 80%;
+    }
+    .header-small-padding {
+        min-width: 10%;
+        width: auto;
+        height: 1rem;
+    }
+    .left-logo {
+        width: 50%;
+        max-width: 15rem;
+        margin-right: auto;
+    }
+    .evinine-logo {
+        width: 100%;
+    }
+    .open-menu-button {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .menu-logo {
+        width: 100%
+    }
+    .menu {
+        background-color: #283366;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 90%;
+        width: 0;
+        max-width: fit-content;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 0 0 1.5rem 0.1rem #00000090;
+    }
+    .menu-gap {
+        flex: 1;
+    }
+    .close-menu-button {
+        width: 2rem;
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: 4rem;
+        transition: 0.3s;
+    }
+    .cross-logo {
+        width: 100%;
+        margin: auto;
+    }
+    .menu-website-links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website-link {
+        font-size: 0;
+        transition: 0.3s;
+    }
+    .website-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+    .menu-socials-links {
+        display: flex;
+        margin: 5rem 3rem 5rem 3rem;
+        padding-right: 1rem;
+    }
+    .social-link {
+        width: 1.5rem;
+        margin-left: 1rem;
+    }
+    .social-link-logo {
+        width: 100%
+    }
+    .page-cover {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        z-index: 998;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+}
 
-<div class="header-small">
-<div class="header-small-padding"></div>
-<div class="left-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<button class="open-menu-button" onclick="openMenu()"><img class="menu-logo" src="Logos/Menu Logo Blue.svg"></button>
-<div class="header-small-padding"></div>
-</div>
+/* STYLING FOR MAIN BODY */
 
-<div class="menu" id="js-menu">
-<button class="close-menu-button" id="js-close-menu-button" onclick="closeMenu()"><img class="cross-logo" src="Logos/Cross Logo Blue.svg"></button>
-<div class="menu-gap"></div>
-<div class="menu-website-links">
-<div><a class="website-link" id="js-menu-website-link-1" href="https://evininemusic.com">home</a></div>
-<div><a class="website-link" id="js-menu-website-link-2" href="https://evininemusic.com/music">music</a></div>
-<div><a class="website-link current-page" id="js-menu-website-link-3" href="https://evininemusic.com/socials">socials</a></div>
-</div>
-<div class="menu-socials-links">
-<div class="social-link"><a href="https://open.spotify.com/artist/2nb2f6Nn7MJCkvjmZKr6GC"><img class="social-link-logo" src="Logos/Spotify Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://music.apple.com/us/artist/evinine/1860717141"><img class="social-link-logo header-apple-logo" src="Logos/Apple Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://www.youtube.com/@evininemusic"><img class="social-link-logo" src="Logos/YouTube Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://tiktok.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
-</div>
-<div class="menu-gap"></div>
-</div>
+.button {
+    flex: 1;
+}
+.button-link {
+    display: flex;
+    border-style: solid;
+    border-color: #A9C3DA;
+    border-width: 1px;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 1.3rem;
+}
+.button-link:hover {
+    background-color: #A9C3DA;
+    color: black;
+    transition: 0.2s;
+}
+.social-button {
+    max-width: 30rem;
+    width: 100%;
+    display: flex;
+    border-style: solid;
+    border-color: #A9C3DA;
+    border-width: 1px;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 1.3rem;
+    font-size: 1.7rem;
+}
+.social-button:hover {
+    background-color: #A9C3DA;
+    color: black;
+    transition: 0.2s;
+}
+.social-button-logo-container {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.7rem;
+    padding: 0;
+}
+.social-button-logo {
+    width: 2rem;
+    margin: 0;
+    position: absolute;
+    transition: 0.2s;
+}
+.socials-title {
+    font-size: 2.7rem;
+    padding-top: 5rem;
+    padding-bottom: 1.7rem;
+    transition: 0.2s;
+    text-align: center;
+}
+.body {
+    margin: 0rem auto 7rem auto;
+    width: 80%;
+    max-width: 30rem;
+    justify-items: center;
+}
+.image {
+    max-width: 30rem;
+    box-shadow: 0 0 1.5rem 0.1rem #00000090;
+}
 
-<div class="page-cover" id="js-page-cover" onclick="closeMenu()"></div>
+@media (min-width: 860px) {
+    .streaming-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 2rem;
+        margin: 5rem 2rem 5rem 2rem;
+    }
+    .streaming-title {
+        width: 100%;
+        font-size: 3.7rem;
+        text-align: center;
+    }
+    .streaming-subtitle {
+        width: 100%;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
 
-<div class="body">
-
-<div class="socials-title">streaming platforms</div>
-
-<a class="button social-button" href="https://open.spotify.com/artist/2nb2f6Nn7MJCkvjmZKr6GC" target="_blank" onmouseover="removeLogo('js-spotify-button-logo')" onmouseleave="addLogo('js-spotify-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Spotify Logo Black.svg"><img class="social-button-logo" id="js-spotify-button-logo" src="Logos/Spotify Logo Blue.svg"></div> spotify</a>
-
-<a class="button social-button" href="https://music.apple.com/us/artist/evinine/1860717141" target="_blank" onmouseover="removeLogo('js-apple-button-logo')" onmouseleave="addLogo('js-apple-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Apple Logo Black.svg"><img class="social-button-logo" id="js-apple-button-logo" src="Logos/Apple Logo Blue.svg"></div> apple music</a>
-
-<a class="button social-button" href="https://www.youtube.com/@evininemusic" target="_blank" onmouseover="removeLogo('js-youtube-button-logo')" onmouseleave="addLogo('js-youtube-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/YouTube Logo Black.svg"><img class="social-button-logo" id="js-youtube-button-logo" src="Logos/YouTube Logo Blue.svg"></div> youtube</a>
-
-<a class="button social-button" href="https://music.amazon.com/artists/B0G6H1QM4P/evinine" target="_blank" onmouseover="removeLogo('js-amazon-button-logo')" onmouseleave="addLogo('js-amazon-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Amazon Logo Black.svg"><img class="social-button-logo" id="js-amazon-button-logo" src="Logos/Amazon Logo Blue.svg"></div> amazon</a>
-
-<a class="button social-button" href="https://tidal.com/artist/71188667" target="_blank" onmouseover="removeLogo('js-tidal-button-logo')" onmouseleave="addLogo('js-tidal-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Tidal Logo Black.svg"><img class="social-button-logo" id="js-tidal-button-logo" src="Logos/Tidal Logo Blue.svg"></div> tidal</a>
-
-<a class="button social-button" href="" target="_blank" onmouseover="removeLogo('js-soundcloud-button-logo')" onmouseleave="addLogo('js-soundcloud-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Soundcloud Logo Black.svg"><img class="social-button-logo" id="js-soundcloud-button-logo" src="Logos/Soundcloud Logo Blue.svg"></div> soundcloud</a>
-
-<div class="socials-title">social media</div>
-
-<a class="button social-button" href="https://instagram.com/evininemusic" target="_blank" onmouseover="removeLogo('js-instagram-button-logo')" onmouseleave="addLogo('js-instagram-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Instagram Logo Black.svg"><img class="social-button-logo" id="js-instagram-button-logo" src="Logos/Instagram Logo Blue.svg"></div> instagram</a>
-
-<a class="button social-button" href="https://tiktok.com/evininemusic" target="_blank" onmouseover="removeLogo('js-tiktok-button-logo')" onmouseleave="addLogo('js-tiktok-button-logo')"><div class="social-button-logo-container"><img class="social-button-logo" src="Logos/Tiktok Logo Black.svg"><img class="social-button-logo" id="js-tiktok-button-logo" src="Logos/Tiktok Logo Blue.svg"></div> tiktok</a>
-</div>
-
-</div>
-
-</body>
-
-<script src="index.js"></script>
-<script src="socials.js"></script>
-
-</html>
+@media (max-width: 860px) {
+    .social-button {
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .social-button-logo-container {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.7rem;
+        padding: 0;
+    }
+    .social-button-logo {
+        width: 1.5rem;
+        margin: 0;
+        position: absolute;
+        transition: 0.2s;
+    }
+    .socials-title {
+        font-size: 1.7rem;
+        padding-top: 5rem;
+        padding-bottom: 1.7rem;
+    }
+    .streaming-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 1.5rem;
+        margin: 3rem 2rem 3.75rem 2rem;
+    }
+    .streaming-title {
+        width: 100%;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .streaming-subtitle {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
