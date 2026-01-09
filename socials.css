@@ -133,10 +133,7 @@ button:hover {
     }
     .social-link {
         width: 2rem;
-        margin-left: 1rem;
-    }
-    .social-link-space {
-        width: 1.3rem
+        margin-left: 1.7rem;
     }
     .social-link-logo {
         width: 100%
@@ -284,9 +281,6 @@ button:hover {
     .social-link {
         width: 1.5rem;
         margin-left: 1rem;
-    }
-    .social-link-space {
-        width: 1.3rem
     }
     .social-link-logo {
         width: 100%
