@@ -72,8 +72,8 @@ button:hover {
 /* STYLING FOR HEADER */
 
 .current-page {
-    text-decoration: underline !important;
-    text-decoration-thickness: 1px !important;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
     text-underline-offset: 5px;
 }
 .body {
@@ -364,6 +364,30 @@ button:hover {
     max-width: 30rem;
     justify-items: center;
 }
+.image {
+    max-width: 30rem;
+    box-shadow: 0 0 1.5rem 0.1rem #00000090;
+}
+
+@media (min-width: 860px) {
+    .streaming-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 2rem;
+        margin: 5rem 2rem 5rem 2rem;
+    }
+    .streaming-title {
+        width: 100%;
+        font-size: 3.7rem;
+        text-align: center;
+    }
+    .streaming-subtitle {
+        width: 100%;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
 
 @media (max-width: 860px) {
     .social-button {
@@ -389,5 +413,21 @@ button:hover {
         padding-top: 5rem;
         padding-bottom: 1.7rem;
     }
+    .streaming-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        gap: 1.5rem;
+        margin: 3rem 2rem 3.75rem 2rem;
+    }
+    .streaming-title {
+        width: 100%;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .streaming-subtitle {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
-
