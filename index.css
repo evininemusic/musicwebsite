@@ -120,7 +120,7 @@ button:hover {
     }
     .social-link {
         width: 2rem;
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
     .social-link-space {
         width: 1.3rem
@@ -265,11 +265,11 @@ button:hover {
     .menu-socials-links {
         display: flex;
         margin: 5rem 3rem 5rem 3rem;
-        padding-right: 3rem;
+        padding-right: 1rem;
     }
     .social-link {
-        width: 1.8rem;
-        margin-left: 3rem;
+        width: 1.5rem;
+        margin-left: 1rem;
     }
     .social-link-space {
         width: 1.3rem
@@ -618,5 +618,3 @@ button:hover {
         transition: 0.2s;
     }
 }
-
-
