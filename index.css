@@ -62,8 +62,8 @@ button:hover {
 /* STYLING FOR HEADER */
 
 .current-page {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
     text-underline-offset: 5px;
 }
 .header-apple-logo {
@@ -120,10 +120,7 @@ button:hover {
     }
     .social-link {
         width: 2rem;
-        margin-left: 1rem;
-    }
-    .social-link-space {
-        width: 1.3rem
+        margin-left: 1.7rem;
     }
     .social-link-logo {
         width: 100%
@@ -271,9 +268,6 @@ button:hover {
         width: 1.5rem;
         margin-left: 1rem;
     }
-    .social-link-space {
-        width: 1.3rem
-    }
     .social-link-logo {
         width: 100%
     }
@@ -310,6 +304,7 @@ button:hover {
     background-color: #A9C3DA;
     color: black;
     transition: 0.2s;
+    cursor: pointer;
 }
 .social-button {
     width: 30rem;
@@ -415,7 +410,7 @@ button:hover {
     }
     .lyric-table-project-line {
         width: auto;
-        height: 1px;
+        height: 0.5px;
         margin: 0 0 1rem 0;
         background-color: #A9C3DA;
     }
@@ -452,11 +447,21 @@ button:hover {
         line-height: 2.5rem;
         transition: 0.2s;
     }
+    .button-link {
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        font-size: 1.7rem;
+        transition: 0.2s;
+    }
     .lyrics-title {
         font-size: 3.7rem;
+        line-height: 4rem;
         padding-bottom: 1rem;
         font-style: italic;
         transition: 0.2s;
+    }
+    .lyrics-title-smaller {
+        font-size: 1.7rem;
     }
     .lyrics-subtitle {
         font-size: 1.7rem;
@@ -491,6 +496,7 @@ button:hover {
     }
     .image {
         width: 100%;
+        box-shadow: 0 0 1.5rem 0.1rem #00000090;
     }
     .image-text {
         display: flex;
@@ -549,7 +555,7 @@ button:hover {
     }
     .lyric-table-project-line {
         width: auto;
-        height: 1px;
+        height: 0.5px;
         margin: 0 0 0.5rem 0;
         background-color: #A9C3DA;
     }
@@ -599,6 +605,9 @@ button:hover {
         padding-bottom: 1rem;
         font-style: italic;
         transition: 0.2s;
+    }
+    .lyrics-title-smaller {
+        font-size: 1.3rem;
     }
     .lyrics-subtitle {
         margin-top: -0.7rem;
