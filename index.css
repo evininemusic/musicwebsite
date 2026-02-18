@@ -23,7 +23,6 @@ body {
     z-index: -1;
     background-color:#000000;
     background-position: top;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url("Backgrounds/Background\ 2.jpg");
     background-size: cover;
