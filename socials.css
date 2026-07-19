@@ -9,22 +9,6 @@
     font-style: normal;
     font-display: swap;
 }
-body,
-::after,
-::before {
-  box-sizing: border-box !important;
-  padding: 0px !important;
-  margin: 0px !important;
-}
-/* body {
-    color: var(--text-color);
-    font-family: 'Kotta One', 'Times New Roman', Times, serif;
-    background-image: url(Backgrounds/Background\ 2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-attachment: fixed;
-} */
 body {
     color: var(--text-color);
     font-family: 'Kotta One', 'Times New Roman', Times, serif;
@@ -35,11 +19,15 @@ body {
     top: 0;
     z-index: -1;
     background-color:#000000;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url("Backgrounds/Background\ 2.jpg");
-    background-size: cover;
+    margin: 0;
+}
+
+.bg-image {
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 .wrapper {
     position: absolute;
