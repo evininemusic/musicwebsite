@@ -43,8 +43,7 @@ body {
 :root {
     --text-color: #A9C3DA;
     --link-color: #A9CEDA;
-}
-:link {
+a, a:link, a:visited {
     text-decoration: none;
     color: var(--text-color);
 }
