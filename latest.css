@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Kotta One';
+    src: url('Fonts/KottaOne-Regular.eot');
+    src: url('Fonts/KottaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/KottaOne-Regular.woff2') format('woff2'),
+        url('Fonts/KottaOne-Regular.woff') format('woff'),
+        url('Fonts/KottaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --text-color: #A9C3DA;
+    --link-color: #A9CEDA;
+}
+
+html {
+    min-height: 100vh
+}
+body {
+    color: var(--text-color);
+    font-family: 'Kotta One', 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color:#000000;
+    margin: 0;
+}
+a, a:link, a:visited {
+    color: var(--text-color);
+}
+.bg-image {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.wrapper {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 2rem;
+}
+
+.title {
+    font-size: 2.7rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.description {
+    font-size: 1.7rem;
+    margin: auto;
+    text-align: center;
+}
+.redirect-link {
+    text-decoration: underline;
+}

@@ -2,80 +2,156 @@
 <html>
   
 <head>
-
-<title>
-Music - evinine
-</title>
-<link rel="icon" href="Logos/ev Logo Blue.svg" type="image/icon type">
-<link rel="stylesheet" href="index.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>music - evinine</title>
+    <link rel="icon" href="Logos/ev Logo Blue.svg" type="image/icon type">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<div class="wrapper">
+    <img class="bg-image" src="Backgrounds/Background 2.jpg">
 
-<div class="header-large">
-<div class="website-links">
-<div><a class="website-link" href="https://evinine.music">home</a></div>
-<div><a class="website-link current-page" href="https://evinine.music/music">music</a></div>
-<div><a class="website-link" href="https://evinine.music/socials">socials</a></div>
-</div>
-<div class="center-logo"><a href="https://evinine.music"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<div class="socials-links">
-<div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://tiktok.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://twitter.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Twitter Logo Blue.svg"></a></div>
-</div>
-</div>
+    <div class="wrapper">
 
-<div class="header-medium">
-<div class="left-logo"><a href="https://evinine.music"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<div class="website-links">
-<div><a class="website-link" href="https://evinine.music">home</a></div>
-<div><a class="website-link current-page" href="https://evinine.music/music">music</a></div>
-<div><a class="website-link" href="https://evinine.music/socials">socials</a></div>
-</div>
-</div>
+        <!-- HEADER AND MENU ELEMENTS -->
 
-<div class="header-small">
-    <div class="header-small-padding"></div>
-<div class="left-logo"><a href="https://evinine.music"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
-<button class="open-menu-button" onclick="openMenu()"><img class="menu-logo" src="Logos/Menu Logo Blue.svg"></button>
-<div class="header-small-padding"></div>
-</div>
+        <div class="header-large">
+            <div class="website-links">
+                <div><a class="website-link" href="https://evininemusic.com">home</a></div>
+                <div><a class="website-link current-page" href="https://evininemusic.com/music">music</a></div>
+                <div><a class="website-link" href="https://evininemusic.com/socials">socials</a></div>
+            </div>
+            <div class="center-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
+            <div class="socials-links">
+                <div class="social-link"><a href="https://open.spotify.com/artist/2nb2f6Nn7MJCkvjmZKr6GC"><img class="social-link-logo" src="Logos/Spotify Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://music.apple.com/us/artist/evinine/1860717141"><img class="social-link-logo header-apple-logo" src="Logos/Apple Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://www.youtube.com/@evininemusic"><img class="social-link-logo" src="Logos/YouTube Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://tiktok.com/@evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
+            </div>
+        </div>
 
-<div class="menu" id="js-menu">
-<button class="close-menu-button" id="js-close-menu-button" onclick="closeMenu()"><img class="cross-logo" src="Logos/Cross Logo Blue.svg"></button>
-<div class="menu-gap"></div>
-<div class="menu-website-links">
-<div><a class="website-link" id="js-menu-website-link-1" href="https://evinine.music">home</a></div>
-<div><a class="website-link current-page" id="js-menu-website-link-2" href="https://evinine.music/music">music</a></div>
-<div><a class="website-link" id="js-menu-website-link-3" href="https://evinine.music/socials">socials</a></div>
-</div>
-<div class="menu-socials-links">
-<div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://tiktok.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
-<div class="social-link"><a href="https://twitter.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Twitter Logo Blue.svg"></a></div>
-</div>
-<div class="menu-gap"></div>
-</div>
+        <div class="header-medium">
+            <div class="left-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
+            <div class="website-links">
+                <div><a class="website-link" href="https://evininemusic.com">home</a></div>
+                <div><a class="website-link current-page" href="https://evininemusic.com/music">music</a></div>
+                <div><a class="website-link" href="https://evininemusic.com/socials">socials</a></div>
+            </div>
+        </div>
 
-<div class="page-cover" id="js-page-cover" onclick="closeMenu()"></div>
+        <div class="header-small">
+            <div class="header-small-padding"></div>
+            <div class="left-logo"><a href="https://evininemusic.com"><img class="evinine-logo" src="Logos/evinine Logo Blue.svg"></a></div>
+            <button class="open-menu-button" onclick="openMenu()"><img class="menu-logo" src="Logos/Menu Logo Blue.svg"></button>
+            <div class="header-small-padding"></div>
+        </div>
 
-<div class="body">
+        <div class="menu" id="js-menu">
+            <button class="close-menu-button" id="js-close-menu-button" onclick="closeMenu()"><img class="cross-logo" src="Logos/Cross Logo Blue.svg"></button>
+            <div class="menu-gap"></div>
+            <div class="menu-website-links">
+                <div><a class="website-link" id="js-menu-website-link-1" href="https://evininemusic.com">home</a></div>
+                <div><a class="website-link current-page" id="js-menu-website-link-2" href="https://evininemusic.com/music">music</a></div>
+                <div><a class="website-link" id="js-menu-website-link-3" href="https://evininemusic.com/socials">socials</a></div>
+            </div>
+            <div class="menu-socials-links">
+                <div class="social-link"><a href="https://open.spotify.com/artist/2nb2f6Nn7MJCkvjmZKr6GC"><img class="social-link-logo" src="Logos/Spotify Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://music.apple.com/us/artist/evinine/1860717141"><img class="social-link-logo header-apple-logo" src="Logos/Apple Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://www.youtube.com/@evininemusic"><img class="social-link-logo" src="Logos/YouTube Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://instagram.com/evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Instagram Logo Blue.svg"></a></div>
+                <div class="social-link"><a href="https://tiktok.com/@evininemusic" target="_blank"><img class="social-link-logo" src="Logos/Tiktok Logo Blue.svg"></a></div>
+            </div>
+            <div class="menu-gap"></div>
+        </div>
 
-<div class="paragraph">
-<div class="paragraph-text">
-<div class="title">coming soon...</div>
-</div>
-</div>
+        <div class="page-cover" id="js-page-cover" onclick="closeMenu()"></div>
 
-</div>
+
+
+        <!-- LATEST RELEASE ELEMENTS I.E. BLUE HOUR EP -->
+
+        <a class="latest-release-container-large" href="https://artists.landr.com/991048839748">
+            <img class="latest-release-notebook" src="Images/Notebook.png" alt="">
+            <div class="latest-release-contents">
+                <div class="latest-release-small-column">
+                    <div class="latest-release-small-column-image" style="transform: rotate(8deg);" onmouseenter=""><img class="mini-image" src="Images/Mini 2.png" alt=""></div>
+                    <div class="latest-release-small-column-text"><img src="Images/Pre Save Now.png" alt="pre-save now!" title="pre-save now!" style="height: 2.5rem;"></div>
+                </div>
+                <div class="latest-release-big-column">
+                    <img class="latest-release-image" src="Images/Latest Release.png" alt="">
+                </div>
+                <div class="latest-release-small-column">
+                    <div class="latest-release-small-column-text"><img src="Images/EP Out.png" alt="my debut EP, out 4 September!" title="my debut EP, out 4 September!"></div>
+                    <div class="latest-release-small-column-image" style="transform: rotate(-7deg);"><img class="mini-image" src="Images/Mini 3.png" alt=""></div>
+                </div>
+            </div>
+        </a>
+
+        <div class="latest-release-container-medium" href="https://artists.landr.com/991048839748">
+            <div class="latest-release-contents">
+                <img class="latest-release-notebook" src="Images/Notebook.png" alt="">
+                <img class="latest-release-image" src="Images/Latest Release.png" alt="">
+                <img class="latest-release-text" src="Images/EP Out Medium.png" alt="my debut EP, out 4 September!" title="my debut EP, out 4 September!">
+                <img class="latest-release-text" src="Images/Pre Save Now.png" alt="pre-save now!" title="pre-save now!">
+            </div>
+        </div>
+
+
+
+        <!-- OLD RELEASE: BLUE HOUR SINGLE -->
+
+        <div class="release-container-large">
+            <div class="release-contents">
+                <div class="release-small-column">
+                </div>
+                <div class="release-big-column">
+                    <a href="https://evininemusic.com/stream/Blue_Hour_single"><img class="release-image" src="Images/Blue Hour Single Cover.jpg" alt=""></a>
+                </div>
+                <div class="release-small-column">
+                </div>
+            </div>
+            <a class="release-plain-text" href="https://evininemusic.com/stream/Blue_Hour_single">Blue Hour (single)</a>
+        </div>
+
+        <div class="release-container-medium" style="margin-bottom: 5rem;">
+            <div class="release-contents">
+                <a href="https://evininemusic.com/stream/Blue_Hour_single"><img class="release-image" src="Images/Blue Hour Single Cover.jpg" alt=""></a>
+                <a class="release-plain-text" href="https://evininemusic.com/stream/Blue_Hour_single">Blue Hour (single)</a>
+            </div>
+        </div>
+
+
+
+        <!-- OLD RELEASE: BLUE HOUR MUSIC VIDEO -->
+
+        <div class="release-container-large">
+            <div class="release-contents">
+                <div class="release-small-column">
+                </div>
+                <div class="release-big-column">
+                    <a href="https://www.youtube.com/watch?v=-_FfQzl4_fw"><img class="release-image" src="Images/Blue Hour Lyric Video Thumbnail.jpg" alt=""></a>
+                </div>
+                <div class="release-small-column">
+                </div>
+            </div>
+            <a class="release-plain-text" href="https://www.youtube.com/watch?v=-_FfQzl4_fw">Blue Hour - Official<br>Lyric Video</a>
+        </div>
+
+        <div class="release-container-medium" style="margin-bottom: 5rem;">
+            <div class="release-contents">
+                <a href="https://www.youtube.com/watch?v=-_FfQzl4_fw"><img class="release-image" src="Images/Blue Hour Lyric Video Thumbnail.jpg" alt=""></a>
+                <a class="release-plain-text" href="https://www.youtube.com/watch?v=-_FfQzl4_fw">Blue Hour - Official<br>Lyric Video</a>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
-<script src="index.js"></script>
+<script src="script.js"></script>
 
 </html>

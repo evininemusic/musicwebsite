@@ -1,0 +1,94 @@
+.lyrics-container {
+    margin: 0rem auto 4rem;
+    padding: 0rem min(10%, 5rem);
+    width: fit-content;
+    align-items: center;
+}
+.lyrics-title {
+    margin: 5rem 0rem 2rem;
+}
+.lyrics-section-name {
+    margin: 0rem;
+}
+.lyrics-section {
+    margin: 1rem 0 2.5rem;
+}
+.lyric-video-image {
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+    margin: 7rem auto 0;
+    box-shadow: 0 0 1.5rem 0.1rem #00000090;
+}
+.lyric-video-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Large Display (866px or more) */
+@media (min-width: 866px) {
+    .lyrics-title {
+        max-height: 4rem;
+    }
+    .lyrics-container {
+        max-width: 60rem;
+    }
+    .lyrics-section-name {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+    .lyrics-section {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+    .lyric-video-text {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .tracklist-title {
+        max-height: 4rem;
+        margin-top: 5rem;
+    }
+    .tracklist-subtitle {
+        font-size: 1.7rem;
+        margin-top: 0.5rem;
+    }
+    .tracklist-table {
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+}
+
+/* Small Display (up to 866px) */
+@media (max-width: 866px) {
+    .lyrics-title {
+        max-height: 3rem;
+    }
+    .lyrics-container {
+        max-width: 30rem;
+    }
+    .lyrics-section-name {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+    .lyrics-section {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+    .lyric-video-text {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .tracklist-title {
+        max-height: 3rem;
+        margin-top: 3rem;
+    }
+    .tracklist-subtitle {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+    .tracklist-table {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+}
