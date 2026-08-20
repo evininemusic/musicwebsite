@@ -21,7 +21,10 @@
 }
 .release-container-medium {
     position: relative;
-    margin-bottom: 3rem;
+    display: block;
+    max-width: 90%;
+    margin: 0 auto 3rem;
+    text-align: center;
 }
 .release-contents {
     display: flex;
